@@ -1,5 +1,5 @@
 <template>
-	<v-app>
+	<v-app id="app">
 		<tool-app-bar/>
 		<v-content>
 			<router-view></router-view>
@@ -24,3 +24,14 @@ const App = defineComponent({
 });
 export default App
 </script>
+<style>
+	#app {
+		font-family: ‘Quicksand’,sans-serif;
+		color: #2c3e50;
+		background-color: hsla(0,0%,94.1%,.8)!important;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 50%;
+		background-size: cover;
+	}
+</style>
