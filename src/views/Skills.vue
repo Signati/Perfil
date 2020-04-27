@@ -1,10 +1,10 @@
 <template>
 	<v-container>
-		<v-row dense>
+		<v-row dense >
 			<v-col
 					v-for="(item, i) in state.skills"
 					:key="i"
-					cols="12" sm="6" md="6" xl="6" lg="6"
+					cols="12" sm="6" md="3" xl="3" lg="3"
 			>
 				<v-card class="mx-auto"
 				        max-width="400"

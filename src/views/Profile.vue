@@ -76,6 +76,7 @@
 				</v-card>
 			</v-col>
 			<v-col cols="12">
+				<span class="title">Experiencia profesional</span>
 				<v-sheet v-for="(cvworks,i) of curriculum.works"
 				         :key="i"
 				         style="border-radius: 10px"
@@ -86,12 +87,15 @@
 							<span class="pl-2">{{cvworks.title}}</span>
 						</v-col>
 						<v-col cols="12" sm="12" md="9" lg="9" xl="9">
+							<span class="subtitle-1 black--text">{{cvworks.subtitle}}</span>
+							<br>
 							{{cvworks.description}}
 						</v-col>
 					</v-row>
 				</v-sheet>
 			</v-col>
 			<v-col cols="12">
+				<span class="title">Educación</span>
 				<v-sheet v-for="(cv,j) of curriculum.school"
 				         :key="j"
 				         style="border-radius: 10px"
@@ -102,6 +106,8 @@
 							<span class="pl-2">{{cv.title}}</span>
 						</v-col>
 						<v-col cols="12" sm="12" md="9" lg="9" xl="9">
+							<span class="subtitle-1 black--text">{{cv.subtitle}}</span>
+							<br>
 							{{cv.description}}
 						</v-col>
 					</v-row>
@@ -124,7 +130,7 @@ const Profile = defineComponent({
                     icon: 'mdi-school',
                     title: 'Universidad Tecnológica de la Riviera Maya 2017 - 2019',
                     description: 'Prácticas profecionales para obtener el título de ingeniería en tecnologías de la información,realizadas en el párque ecoturistico Xcaret\'',
-                    subtitle: 'TSU en Tecnologías de la información Títulado',
+                    subtitle: 'Ingeniería en Tecnologías de la información',
                     subtitle2: ' cédula profesional XXXXXX '
 
                 },
@@ -138,8 +144,8 @@ const Profile = defineComponent({
                 {
                     icon: 'mdi-school',
                     title: 'EMSAD X-PICHIL 2012 - 2015',
-                    description: 'Bachillerato Tecnológico en el área fisico metemático carrera, electrónica.',
-                    subtitle: 'TSU en Tecnologías de la información Títulado',
+                    description: 'Escuela Media Superior a Distancia especialidad en Informatica ',
+                    subtitle: 'Bachillerato',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
 
