@@ -129,7 +129,9 @@ const Profile = defineComponent({
                 {
                     icon: 'mdi-school',
                     title: 'Universidad Tecnológica de la Riviera Maya 2017 - 2019',
-                    description: 'Prácticas profecionales para obtener el título de ingeniería en tecnologías de la información,realizadas en el párque ecoturistico Xcaret\'',
+                    description: `Prácticas profecionales para obtener el
+                                 título de Ingeniería tecnologías de la información
+                                ,realizadas en Enlaces Playa`,
                     subtitle: 'Ingeniería en Tecnologías de la información',
                     subtitle2: ' cédula profesional XXXXXX '
 
@@ -137,7 +139,9 @@ const Profile = defineComponent({
                 {
                     icon: 'mdi-school',
                     title: 'Universidad Tecnológica de la Riviera Maya 2015 - 2017',
-                    description: 'Prácticas profecionales para obtener el título de ingeniería en tecnologías de la información,realizadas en el párque ecoturistico Xcaret\'',
+                    description:`Prácticas profecionales para obtener el
+                                 título de Tecnico Superior Universitario en tecnologías de la información
+                                ,realizadas en el Colegio Inglés`,
                     subtitle: 'TSU en Tecnologías de la información Títulado',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
