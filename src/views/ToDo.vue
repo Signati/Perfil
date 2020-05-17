@@ -1,22 +1,6 @@
 <template>
 	<v-container style="max-width: 500px">
-		<v-text-field
-				v-model="state.task"
-				label="What are you working on?"
-				solo
-				@keydown.enter="create"
-		>
-			<v-fade-transition v-slot:append>
-				<v-icon
-						v-if="state.task"
-						@click="create"
-				>
-					add_circle
-				</v-icon>
-			</v-fade-transition>
-		</v-text-field>
-		
-		<h2 class="display-1 success--text pl-4">
+		<h2 class="display-1 success--text ">
 			Tasks:&nbsp;
 			<v-fade-transition leave-absolute>
         <span :key="`tasks-${state.tasks.length}`">
@@ -72,7 +56,7 @@
 									<div
 											:class="task.done && 'grey--text' || 'primary--text'"
 											class="ml-4"
-											v-text="task.text"
+											v-text="task.title"
 									></div>
 								</template>
 							</v-checkbox>
@@ -105,12 +89,101 @@ const ToDo = defineComponent({
         const state = reactive({
             tasks: [
                 {
-                    done: false,
-                    text: 'Foobar',
+                    color: '#E0234E',
+                    src: 'https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg',
+                    title: 'Nest Js',
+                    artist: 'Foster the People',
+                    percentage: 90,
+	                done: true
                 },
                 {
-                    done: false,
-                    text: 'Fizzbuzz',
+                    color: '#3FBA84',
+                    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png',
+                    title: 'Vue js',
+                    artist: 'Ellie Goulding',
+                    percentage: 95,
+                    done: true
+                },
+                {
+                    color: '#F35045',
+                    src: 'https://cdn.freebiesupply.com/logos/large/2x/laravel-logo-png-transparent.png',
+                    title: 'Laravel',
+                    artist: 'Ellie Goulding',
+                    percentage: 90,
+                    done: true
+                },
+                {
+                    color: '#53C1DE',
+                    src: 'https://gojs.net/latest/assets/images/react-icon.svg',
+                    title: 'React js',
+                    artist: 'Ellie Goulding',
+                    percentage: 40,
+                    done: true
+                },
+                {
+                    color: '#71B9FB',
+                    src: 'https://pngimg.com/uploads/mysql/mysql_PNG10.png',
+                    title: 'Mysql',
+                    artist: 'Ellie Goulding',
+                    percentage: 80,
+                    done: true
+                },
+                {
+                    color: '#777BB3',
+                    src: 'https://www.php.net/images/logos/new-php-logo.svg',
+                    title: 'PHP',
+                    artist: 'Ellie Goulding',
+                    percentage: 95,
+                    done: true
+                },
+                {
+                    color: '#E10098',
+                    src: 'https://graphql.org/img/logo.svg',
+                    title: 'GraphQl',
+                    artist: 'Ellie Goulding',
+                    percentage: 70,
+                    done: true
+	                
+                },
+                {
+                    color: '#326690',
+                    src: 'https://www.postgresql.org/media/img/about/press/elephant.png',
+                    title: 'PostgreSQL',
+                    artist: 'Ellie Goulding',
+                    percentage: 30,
+                    done: true
+                },
+                {
+                    color: '#5998F7',
+                    src: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/324/landscape/ioniclogo.png',
+                    title: 'Ionic',
+                    artist: 'Ellie Goulding',
+                    percentage: 70,
+                    done: true
+                },
+                {
+                    color: '#6BDEFB',
+                    src: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/123/landscape/electronlogo.png',
+                    title: 'Electron JS',
+                    artist: 'Ellie Goulding',
+                    percentage: 90,
+                    done: true
+                },
+                {
+                    color: '#6BDEFB',
+                    src: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/123/landscape/electronlogo.png',
+                    title: 'React Native',
+                    artist: '',
+                    percentage: 90,
+                    done: false
+                },
+                {
+                    color: '#6BDEFB',
+                    src: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/123/landscape/electronlogo.png',
+                    title: 'QT C++',
+                    artist: '',
+                    percentage: 90,
+                    done: false
                 },
             ],
             task: null,

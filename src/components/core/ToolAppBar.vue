@@ -1,8 +1,9 @@
 <template>
 	<v-app-bar
-			color="deep-purple accent-4"
+			color="blue accent-4"
 			dense
 			dark
+			elevation="0"
 			fixed
 			app
 	>

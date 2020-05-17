@@ -50,14 +50,9 @@ const MenuNav = defineComponent({
                 icon: 'mdi-code-json'
             },
             {
-                name: 'Libraries',
-                path: '/libraries',
-                icon: 'mdi-book'
-            },
-            {
-                name: 'Ideas',
+                name: 'Post',
                 path: '/ideas',
-                icon: 'mdi-lightbulb-on-outline'
+                icon: 'mdi-post-outline'
             },
             {
                 name: 'To Do',
