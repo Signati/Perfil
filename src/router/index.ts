@@ -21,6 +21,51 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/Projects.vue')
     },
     {
+        path: '/projects/kiinbeh',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/kiinbeh.vue')
+    },
+    {
+        path: '/projects/puntodeventa',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/puntodeventa.vue')
+    },
+    {
+        path: '/projects/signaticore',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/signaticore.vue')
+    },
+    {
+        path: '/projects/signatiapp',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/signatiapp.vue')
+    },
+    {
+        path: '/projects/lavanderia',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/lavanderia.vue')
+    },
+    {
+        path: '/projects/ondinas',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/ondinas.vue')
+    },
+    {
+        path: '/projects/facturatelweb',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/facturatelweb.vue')
+    },
+    {
+        path: '/projects/entradas',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/entradas.vue')
+    },
+    {
+        path: '/projects/deploy',
+        name: 'Projects',
+        component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/deploy.vue')
+    },
+    {
         path: '/',
         name: 'Profile',
         component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')

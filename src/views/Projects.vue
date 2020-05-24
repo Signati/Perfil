@@ -2,9 +2,8 @@
 	<v-container fluid>
 		<v-row >
 			<v-col v-for="(project,i) of projects"  :key="i" cols="12"  sm="6" md="4" lg="3" xl="2">
-				<v-card>
+				<v-card style="border-radius: 10px">
 					<v-img   :src="require('../assets/'+ project.picture)" height="200px"></v-img>
-					
 					<v-card-title>
 						{{project.title}}
 					</v-card-title>
@@ -19,6 +18,7 @@
 						<v-btn
 								color="purple"
 								text
+								:to="project.to"
 						>
 							Explore
 						</v-btn>
