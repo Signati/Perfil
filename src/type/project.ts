@@ -6,7 +6,12 @@ export interface Project {
     private: boolean;
     gallery: Gallery[],
     description: string;
-    features: Features[]
+    features: Features[];
+    tools: Features[];
+    repo: {
+        text: string,
+        link: string
+    }
 }
 
 export interface Gallery {

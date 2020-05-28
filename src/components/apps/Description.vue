@@ -3,17 +3,12 @@
 		<span class="display-1">{{state.title}}</span>
 		<v-row dense>
 			<v-col cols="8">
-				<v-img aspect-ratio="1"
-				       max-height="800"
-				       :src="require('../../assets/'+state.img)" height="450px"></v-img>
+				<img  width="100%" :src="require('../../assets/'+state.img)" height="100%">
 			</v-col>
 			<v-col cols="4">
 				<span class="title">{{state.business}}</span>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.
-					Proin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.
-					Etur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu
-					rsus eget hendrerit at, congue nec enim.
+					{{state.about}}
 				</p>
 			</v-col>
 			<v-col cols="12">
@@ -36,6 +31,24 @@
 					</li>
 				</ul>
 			
+			</v-col>
+			
+			<v-col cols="12">
+				Tools
+				<ul>
+					<li v-for="(tool,i) of state.tools" v-bind:key="i">
+						{{tool.text}}
+					</li>
+				</ul>
+			</v-col>
+			<v-col cols="12">
+				Repository
+				<br>
+				<v-chip v-if="state.private" outlined label  color="orange">Private</v-chip>
+			    <v-btn v-else color="primary" :href="state.repo.text">
+				   <v-icon class="mr-2">mdi-github</v-icon>
+				    {{state.repo.text}}
+			    </v-btn>
 			</v-col>
 		</v-row>
 	</div>

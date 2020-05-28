@@ -16,12 +16,9 @@ const signaticore =  defineComponent({
     setup() {
         const state: Project = {
             title: 'Sistema de Cobranza Escolar',
-            business: 'kiinbeh',
+            business: 'Fundacion Kiinbeh',
             img: 'kiinbeh/login.png',
-            about: '\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.\n' +
-                '\t\t\t\t\tProin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.\n' +
-                '\t\t\t\t\tEtur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu\n' +
-                '\t\t\t\t\trsus eget hendrerit at, congue nec enim.',
+            about: '',
             private: true,
             gallery: [
                 {img: 'kiinbeh/conceptos.png'},

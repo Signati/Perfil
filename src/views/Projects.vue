@@ -1,9 +1,9 @@
 <template>
 	<v-container fluid>
-		<v-row >
-			<v-col v-for="(project,i) of projects"  :key="i" cols="12"  sm="6" md="4" lg="3" xl="2">
+		<v-row>
+			<v-col v-for="(project,i) of projects" :key="i" cols="12" sm="6" md="4" lg="3" xl="2">
 				<v-card style="border-radius: 10px">
-					<v-img   :src="require('../assets/'+ project.picture)" height="200px"></v-img>
+					<v-img :src="require('../assets/'+ project.picture)" height="200px"></v-img>
 					<v-card-title>
 						{{project.title}}
 					</v-card-title>
@@ -13,23 +13,25 @@
 					</v-card-subtitle>
 					
 					<v-card-actions>
-						<v-chip outlined label small color="orange">Private</v-chip>
-						
+						<v-chip outlined
+						        label
+						        small
+						        :color="project.private ? 'orange' : 'purple'">
+							{{ project.private ? 'Private' : 'Public'}}
+						</v-chip>
+						<v-spacer></v-spacer>
 						<v-btn
-								color="purple"
+								color="blue"
 								text
 								:to="project.to"
 						>
 							Explore
 						</v-btn>
-						
-						<v-spacer></v-spacer>
-						
 						<v-btn
 								icon
 								@click="project.open = !project.open"
 						>
-							<v-icon>{{ project.open  ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+							<v-icon>{{ project.open ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
 						</v-btn>
 					</v-card-actions>
 					
@@ -38,7 +40,7 @@
 							<v-divider></v-divider>
 							
 							<v-card-text>
-								I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+								{{project.description}}
 							</v-card-text>
 						</div>
 					</v-expand-transition>
