@@ -48,7 +48,9 @@
 						</v-list>
 						
 						
-						Ingeniero en tecnologías de la información y comunicaciones con 4 años de experiencia.
+						Ingeniero en tecnologías de la información y comunicaciones con 4 años de experiencia en el
+						ambiente de desarrollo de sistemas empresariales e implementaciones.
+						<br>Analista de informacion y planteamiento de soluciones
 					</v-card-text>
 					
 					<v-card-actions>
@@ -130,8 +132,7 @@ const Profile = defineComponent({
                     icon: 'mdi-school',
                     title: 'Universidad Tecnológica de la Riviera Maya 2017 - 2019',
                     description: `Prácticas profecionales para obtener el
-                                 título de Ingeniería tecnologías de la información
-                                ,realizadas en Enlaces Playa`,
+                                 título de Ingeniería tecnologías de la información, realizadas en Enlaces Playa`,
                     subtitle: 'Ingeniería en Tecnologías de la información',
                     subtitle2: ' cédula profesional XXXXXX '
 
@@ -139,9 +140,8 @@ const Profile = defineComponent({
                 {
                     icon: 'mdi-school',
                     title: 'Universidad Tecnológica de la Riviera Maya 2015 - 2017',
-                    description:`Prácticas profecionales para obtener el
-                                 título de Tecnico Superior Universitario en tecnologías de la información
-                                ,realizadas en el Colegio Inglés`,
+                    description: `Prácticas profecionales para obtener el
+                                 título de Tecnico Superior Universitario en tecnologías de la información, realizadas en el Colegio Inglés`,
                     subtitle: 'TSU en Tecnologías de la información Títulado',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
@@ -158,26 +158,35 @@ const Profile = defineComponent({
                 {
                     icon: 'mdi-briefcase-check',
                     title: 'Webtel 2018-2020',
-                    description: 'Bachillerato Tecnológico en el área fisico metemático carrera, electrónica.',
-                    subtitle: 'TSU en Tecnologías de la información Títulado',
+                    description:
+                        `Asistir técnicamente a su equipo en la ejecución de sus tareas para poder cumplir con los objetivos del proyecto.
+	                     Participar en los desarrollos de  programas y actividades del Departamento.
+	                     Dar seguimiento a las actovidades plateadas
+	                    `,
+                    subtitle: 'Desarrollado SR Node',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
                 {
                     icon: 'mdi-briefcase-check',
                     title: 'Enlaces Playa 2018',
-                    description: 'Bachillerato Tecnológico en el área fisico metemático carrera, electrónica.',
-                    subtitle: 'TSU en Tecnologías de la información Títulado',
+                    description:
+                        'Desarrollo de sistemas esenciales para la empresa y cubrir las necesidades emergentes con innovaciones',
+                    subtitle: 'Desarrollador JR',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
                 {
                     icon: 'mdi-briefcase-check',
                     title: 'Colegio Ingles 2017-2018',
-                    description: 'Bachillerato Tecnológico en el área fisico metemático carrera, electrónica.',
-                    subtitle: 'TSU en Tecnologías de la información Títulado',
+                    description: `Coordinar, supervisar y monitorear el buen funcionamiento y operación normal de los sistemas.
+                                  Detectar y evaluar los cambios necesarios para asegurar una operación normal de los sistemas.
+                                  Participar activamente de la implantación en producción de nuevos sistemas o cambios a los existentes.
+                                  Configuración de los sistemas en implantación de manera de asegurar una buena operación.
+                                  Mantención y soporte de los sistemas que están en operación`,
+                    subtitle: 'Sistemas',
                     subtitle2: ' cédula profesional XXXXXX '
                 },
-                
-                
+
+
             ]
         })
         return {
