@@ -7,8 +7,8 @@ export interface Project {
     gallery: Gallery[],
     description: string;
     features: Features[];
-    tools: Features[];
-    repo: {
+    tools?: Features[];
+    repo?: {
         text: string,
         link: string
     }
