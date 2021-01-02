@@ -44,6 +44,10 @@ const ToolAppBar = defineComponent({
       {
         text: 'Habilidades',
         href: '#skills'
+      },
+      {
+        text: 'Comunidad',
+        href: '#community'
       }
     ]
     onMounted(() => {

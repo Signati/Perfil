@@ -1,10 +1,11 @@
 <template>
   <v-container>
-    <div>
-      Habilidades
-    </div>
-
     <v-row dense>
+      <v-col cols="12">
+        <div class="text-h4 font-weight-bold blue--text">
+          Habilidades
+        </div>
+      </v-col>
       <v-col cols="12">
         Programming Languages
       </v-col>

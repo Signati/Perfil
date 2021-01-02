@@ -1,6 +1,10 @@
 <template>
-  <v-container style="max-width: 500px">
-    <h2 class="display-1 success--text ">
+  <v-container >
+    <div class="text-h4 font-weight-bold blue--text">
+      Aprendizaje
+    </div>
+
+    <h2 class="">
       Tasks:&nbsp;
       <v-fade-transition leave-absolute>
         <span :key="`tasks-${state.tasks.length}`">
