@@ -1,5 +1,5 @@
 <template>
-	<v-container fluid>
+	<v-container>
 		<v-row>
 			<v-col v-for="(project,i) of projects" :key="i" cols="12" sm="6" md="4" lg="3" xl="2">
 				<v-card style="border-radius: 10px">
@@ -7,11 +7,11 @@
 					<v-card-title>
 						{{project.title}}
 					</v-card-title>
-					
+
 					<v-card-subtitle>
 						{{project.subtitle}}
 					</v-card-subtitle>
-					
+
 					<v-card-actions>
 						<v-chip outlined
 						        label
@@ -34,11 +34,11 @@
 							<v-icon>{{ project.open ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
 						</v-btn>
 					</v-card-actions>
-					
+
 					<v-expand-transition>
 						<div v-show=" project.open">
 							<v-divider></v-divider>
-							
+
 							<v-card-text>
 								{{project.description}}
 							</v-card-text>

@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
     {
-        path: '/home',
+        path: '/',
         name: 'Home',
         component: Home
     },
@@ -14,11 +14,6 @@ const routes: Array<RouteConfig> = [
         path: '/about',
         name: 'About',
         component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-    },
-    {
-        path: '/projects',
-        name: 'Projects',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Projects.vue')
     },
     {
         path: '/projects/kiinbeh',
@@ -66,14 +61,9 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/projects-views/deploy.vue')
     },
     {
-        path: '/',
+        path: '/profile',
         name: 'Profile',
         component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')
-    },
-    {
-        path: '/skills',
-        name: 'Skills',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Skills.vue')
     },
     {
         path: '/libraries',
@@ -94,7 +84,7 @@ const routes: Array<RouteConfig> = [
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+   // mode: 'history',
     base: process.env.BASE_URL,
     routes
 })

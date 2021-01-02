@@ -20,8 +20,8 @@
 							<v-list-item-subtitle>TSU en Tecnologías de la Información</v-list-item-subtitle>
 						</v-list-item-content>
 					</v-list-item>
-					
-					
+
+
 					<v-card-text>
 						<v-list dense>
 							<v-list-item style="height: 10px !important; max-height: 10px; min-height: 0px">
@@ -31,7 +31,7 @@
 									</v-btn>
 								</v-list-item-action>
 								<v-list-item-content>
-									
+
 									<v-list-item-title>amisael.amir.misael@gmail.com</v-list-item-title>
 								</v-list-item-content>
 							</v-list-item>
@@ -46,16 +46,16 @@
 								</v-list-item-content>
 							</v-list-item>
 						</v-list>
-						
-						
+
+
 						Ingeniero en tecnologías de la información y comunicaciones con 4 años de experiencia en el
 						ambiente de desarrollo de sistemas empresariales e implementaciones.
 						<br>Analista de informacion y planteamiento de soluciones
 					</v-card-text>
-					
+
 					<v-card-actions>
 						<v-spacer></v-spacer>
-						
+
 						<v-btn icon color="blue"
 						       href="https://www.facebook.com/amirmisael.marincoh"
 						       target="_blank"
@@ -116,7 +116,7 @@
 				</v-sheet>
 			</v-col>
 		</v-row>
-	
+
 	</v-container>
 </template>
 <script lang="ts">
