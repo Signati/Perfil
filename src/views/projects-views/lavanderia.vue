@@ -17,19 +17,20 @@ const lavanderia =  defineComponent({
         const state: Project = {
             title: 'Sistema de Cobranza Escolar',
             business: 'kiinbeh',
-            img: 'kiinbeh/login.png',
+            img: 'lavanderia/dash.png',
             about: '\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.\n' +
                 '\t\t\t\t\tProin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.\n' +
                 '\t\t\t\t\tEtur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu\n' +
                 '\t\t\t\t\trsus eget hendrerit at, congue nec enim.',
             private: true,
             gallery: [
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/login.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'}
+                {img: 'lavanderia/boxclose.png'},
+                {img: 'lavanderia/tpv.png'},
+                {img: 'lavanderia/pedidos.png'},
+                {img: 'lavanderia/productos.png'},
+                {img: 'lavanderia/variantes.png'},
+                {img: 'lavanderia/roles.png'},
+                {img: 'lavanderia/reportes.png'}
             ],
             description: 'A beautiful blog built using Vue, Vuetify, powered by the Cosmic JS Headless CMS. Read about how it\'s built.',
             features: [

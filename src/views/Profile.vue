@@ -17,12 +17,12 @@
               Amir Misael Marin Coh
             </v-toolbar-title>
             <v-spacer/>
-            <v-btn color="red"
-                   download="CV-AMIR-MARIN.pdf"
-                   :href="require('@/assets/cv-amir-marin.pdf')"
-                   dark link>
+            <a class="v-btn v-btn--contained v-btn--is-elevated v-btn--has-bg theme--dark v-size--default red"
+               download="CV-AMIR-MARIN.pdf"
+               :href="require('@/assets/cv-amir-marin.pdf')"
+            >
               Descargar CV
-            </v-btn>
+            </a>
           </v-toolbar>
           <br>
           <v-list-item>

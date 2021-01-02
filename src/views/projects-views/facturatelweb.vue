@@ -15,21 +15,21 @@ const facturatelweb =  defineComponent({
     props: {},
     setup() {
         const state: Project = {
-            title: 'Sistema de Cobranza Escolar',
-            business: 'kiinbeh',
-            img: 'kiinbeh/login.png',
+            title: 'Sistema de Facturacion',
+            business: 'Meguz Telecom',
+            img: 'facturacion/app.png',
             about: '\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.\n' +
                 '\t\t\t\t\tProin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.\n' +
                 '\t\t\t\t\tEtur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu\n' +
                 '\t\t\t\t\trsus eget hendrerit at, congue nec enim.',
             private: true,
             gallery: [
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/login.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'}
+                {img: 'facturacion/dash.png'},
+                {img: 'facturacion/facturar.png'},
+                {img: 'facturacion/capture.png'},
+                {img: 'facturacion/reporte.png'},
+                {img: 'facturacion/pdf.png'},
+                {img: 'facturacion/excel.png'}
             ],
             description: 'A beautiful blog built using Vue, Vuetify, powered by the Cosmic JS Headless CMS. Read about how it\'s built.',
             features: [

@@ -15,18 +15,19 @@ const signaticore =  defineComponent({
     props: {},
     setup() {
         const state: Project = {
-            title: 'Sistema de Cobranza Escolar',
-            business: 'Fundacion Kiinbeh',
-            img: 'kiinbeh/login.png',
+            title: 'Signati/Core',
+            business: 'Siganti',
+            img: 'signati/core.png',
             about: '',
             private: true,
             gallery: [
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/login.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'}
+                {img: 'signati/complementos.png'},
+                {img: 'signati/structura.png'},
+                {img: 'signati/emisor.png'},
+                {img: 'signati/receptor.png'},
+                {img: 'signati/relacionado.png'},
+                {img: 'signati/conceptos.png'},
+                {img: 'signati/impuestos.png'},
             ],
             description: 'A beautiful blog built using Vue, Vuetify, powered by the Cosmic JS Headless CMS. Read about how it\'s built.',
             features: [
