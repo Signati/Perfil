@@ -9,6 +9,9 @@
     <section id="skills">
       <Skills></Skills>
     </section>
+    <section id="future">
+      <ToDo></ToDo>
+    </section>
   </div>
 </template>
 
@@ -17,12 +20,14 @@ import { defineComponent } from '@vue/composition-api';
 import Profile from './Profile.vue'
 import Projects from './Projects.vue'
 import Skills from './Skills.vue'
+import ToDo from './ToDo.vue'
 
 const Home = defineComponent({
   components: {
     Profile,
     Projects,
-    Skills
+    Skills,
+    ToDo
   },
   props: {},
   setup() {
