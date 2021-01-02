@@ -4,6 +4,12 @@
   "alias": [
     "misael.signati.app"
   ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/"
+    }
+  ],
   "builds": [
     {
       "src": "package.json",

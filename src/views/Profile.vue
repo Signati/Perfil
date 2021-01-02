@@ -16,6 +16,13 @@
             <v-toolbar-title class="ml-3">
               Amir Misael Marin Coh
             </v-toolbar-title>
+            <v-spacer/>
+            <v-btn color="red"
+                   download="CV-AMIR-MARIN.pdf"
+                   :href="require('@/assets/cv-amir-marin.pdf')"
+                   dark link>
+              Descargar CV
+            </v-btn>
           </v-toolbar>
           <br>
           <v-list-item>

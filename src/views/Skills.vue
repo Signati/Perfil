@@ -50,8 +50,8 @@
         Framework
       </v-col>
       <v-col
-          v-for="(item, i) in state.skills"
-          :key="i"
+          v-for="item in state.skills"
+          :key="item.title"
           cols="12" sm="6" md="2" xl="2" lg="2"
       >
         <v-card class="mx-auto"
@@ -91,8 +91,8 @@
         Database
       </v-col>
       <v-col
-          v-for="(item, i) in state.database"
-          :key="i"
+          v-for="item in state.database"
+          :key="item.title"
           cols="12" sm="6" md="2" xl="2" lg="2"
       >
         <v-card class="mx-auto"
