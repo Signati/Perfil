@@ -5,16 +5,18 @@
       color="white"
       app
   >
-    <v-toolbar-title>{{ currentRoute }}</v-toolbar-title>
+    <v-btn class="d-none d-sm-flex d-lg-none" @click="open" icon><v-icon>mdi-menu</v-icon></v-btn>
+    <v-toolbar-title>AMIR MARIN</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
     <v-hover v-slot="{ hover }"
              v-for="(m,i) of menu"
              :key="i"
+             class="d-md-none d-sm-none d-lg-flex"
     >
       <v-btn text :href="m.href">
-        <strong :class="{'purple--text': hover}">
+        <strong>
           {{ m.text }}
         </strong>
       </v-btn>
@@ -26,8 +28,13 @@ import { computed, defineComponent, onMounted } from '@vue/composition-api';
 
 const ToolAppBar = defineComponent({
   components: {},
-  props: {},
+  props: {
+    value: {}
+  },
   setup(props, context) {
+    const propMenu = computed(() => {
+      return props.value
+    })
     const currentRoute = computed(() => {
       return context.root.$route.name
     })
@@ -53,9 +60,13 @@ const ToolAppBar = defineComponent({
     onMounted(() => {
       console.log('0')
     })
+    const open = () => {
+      context.emit('open', !propMenu.value)
+    }
     return {
       currentRoute,
       menu,
+      open
     };
   }
 });

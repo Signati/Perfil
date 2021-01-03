@@ -22,17 +22,17 @@
 				<p>
 					{{state.description}}
 				</p>
-				
-				Features
-				
+
+				Caracteristicas
+
 				<ul>
 					<li v-for="(feature,i) of state.features" v-bind:key="i">
 						{{feature.text}}
 					</li>
 				</ul>
-			
+
 			</v-col>
-			
+
 			<v-col cols="12">
 				Tools
 				<ul>
@@ -45,7 +45,7 @@
 				Repository
 				<br>
 				<v-chip v-if="state.private" outlined label  color="orange">Private</v-chip>
-			    <v-btn v-else color="primary" :href="state.repo.text">
+			    <v-btn v-else color="primary" :href="state.repo.link">
 				   <v-icon class="mr-2">mdi-github</v-icon>
 				    {{state.repo.text}}
 			    </v-btn>

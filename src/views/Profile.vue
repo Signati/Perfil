@@ -128,6 +128,34 @@
           </v-row>
         </v-sheet>
       </v-col>
+      <v-col cols="12">
+        <v-card rounded="lg">
+
+          <v-card-title class="text--h3">Características Personales</v-card-title>
+          <v-card-text>
+            <v-row>
+              <v-col cols="6">
+                <ul>
+                  <li>Actitud positiva</li>
+                  <li>Apasionado por mi trabajo</li>
+                  <li>Capacidad de comunicación</li>
+                  <li>Confianza</li>
+                  <li>Capacidad de análisis y resolución de problemas</li>
+                </ul>
+              </v-col>
+              <v-col cols="6">
+                <ul>
+                  <li>Liderazgo</li>
+                  <li>Trabajo en equipo</li>
+                  <li>Honestidad</li>
+                  <li>Autodidacta</li>
+                </ul>
+              </v-col>
+
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
 
   </v-container>

@@ -52,7 +52,6 @@ const kiinbeh = defineComponent({
                 {text: 'Vue js'},
                 {text: 'Vuetify 1.5'},
                 {text: 'JWT'},
-                {text: 'DigitalOcean'},
             ],
             repo: {
                 link: '',

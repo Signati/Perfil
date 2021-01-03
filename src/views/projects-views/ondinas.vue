@@ -1,54 +1,58 @@
 <template>
-	<v-container>
-		<Description :data="state"></Description>
-	</v-container>
+  <v-container>
+    <Description :data="state"></Description>
+  </v-container>
 </template>
 <script lang="ts">
 import { computed, defineComponent, reactive } from '@vue/composition-api';
 import { Project } from '@/type/project';
 import Description from '@/components/apps/Description.vue';
 
-const ondinas =  defineComponent({
-    components: {
-        Description
-    },
-    props: {},
-    setup() {
-        const state: Project = {
-            title: 'Sistema de Cobranza Escolar',
-            business: 'kiinbeh',
-            img: 'ondinas/dash.png',
-            about: '\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.\n' +
-                '\t\t\t\t\tProin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.\n' +
-                '\t\t\t\t\tEtur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu\n' +
-                '\t\t\t\t\trsus eget hendrerit at, congue nec enim.',
-            private: true,
-            gallery: [
-                {img: 'ondinas/dash2.png'},
-                {img: 'ondinas/clientes.png'},
-                {img: 'ondinas/mapa.png'},
-                {img: 'ondinas/tablas.png'},
-                {img: 'ondinas/reporte.png'},
-                {img: 'ondinas/reporte2.png'}
-            ],
-            description: 'A beautiful blog built using Vue, Vuetify, powered by the Cosmic JS Headless CMS. Read about how it\'s built.',
-            features: [
-                {text: 'Built with Vuetify component framework'},
-                {text: 'Settings configured within Cosmic JS'},
-                {text: 'Moderated commenting system (Un-moderated by default)'},
-                {text: 'Social share buttons'},
-                {text: 'Social profile icons'},
-                {text: ' SEO Ready'},
-                {text: 'Integrated content management system (Cosmic JS)'},
-                {text: 'Single Page App'},
-            ]
+const ondinas = defineComponent({
+  components: {
+    Description
+  },
+  props: {},
+  setup() {
+    const state: Project = {
+      title: 'Delivery App Ondinas',
+      business: 'Meguz Telecom',
+      img: 'ondinas/dash.png',
+      about: 'App creada para la gestion de ventas y entrega a clientes generando la mejor ruta con google maps',
+      private: true,
+      gallery: [
+        { img: 'ondinas/dash2.png' },
+        { img: 'ondinas/clientes.png' },
+        { img: 'ondinas/mapa.png' },
+        { img: 'ondinas/tablas.png' },
+        { img: 'ondinas/reporte.png' },
+        { img: 'ondinas/reporte2.png' }
+      ],
+      description: 'Aplicacion',
+      features: [
+        { text: 'Business intelligence' },
+        { text: 'Single Page App' },
+        { text: 'Reportes en Excel' },
+        { text: 'Facturacion 3.3' },
+        { text: 'Envio de correos' },
+        { text: 'Business intelligence' },
+        { text: 'Single Page App' },
+        { text: 'Roles de usuarios' },
+        { text: 'Terminal Punto de venta' },
+      ],
+      tools: [
+        { text: 'React JS' },
+        { text: 'Materia Ui' },
+        { text: 'Postgress' },
+        { text: 'Postgress' },
+      ]
 
 
-        }
-        return {
-            state
-        };
     }
+    return {
+      state
+    };
+  }
 });
 export default ondinas
 </script>

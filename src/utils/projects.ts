@@ -31,7 +31,7 @@ export const projects: Projects[] = [
     },
     {
         title: 'Signati',
-        subtitle: 'Cobranza de mensualidades',
+        subtitle: 'Libreria para la creacion de XML del SAT',
         picture: 'signati.png',
         to: '/projects/signaticore',
         link: 'https://signati.github.io/core/',
@@ -49,8 +49,8 @@ export const projects: Projects[] = [
     //     description: 'I\'m a thing. But, like most politicians, he promised more than he could deliver. You won\'t have time for sleeping, soldier, not with all the bed making you\'ll be doing. Then we\'ll go with that data file! Hey, you add a one and two zeros to that or we walk! You\'re going to do his laundry? I\'ve got to find a way to escape.'
     // },
     {
-        title: 'Sistema para Lavanderia',
-        subtitle: 'Cobranza de mensualidades',
+        title: 'Sistema de Lavanderia',
+        subtitle: 'Terminal punto de venta para lavanderias',
         picture: 'tendedero.png',
         to: '/projects/lavanderia',
         link: 'https://demo-laundry.telweb.app',
@@ -59,7 +59,7 @@ export const projects: Projects[] = [
     },
     {
         title: 'Commercio Ondinas',
-        subtitle: 'Cobranza de mensualidades',
+        subtitle: 'Cobranza de entregas por rutas',
         picture: 'ondinas.png',
         to: '/projects/ondinas',
         link: '/asdasd',
@@ -68,7 +68,7 @@ export const projects: Projects[] = [
     },
     {
         title: 'Sistema de Facturacion',
-        subtitle: 'Cobranza de mensualidades',
+        subtitle: 'Facturacion de mensualidades',
         picture: 'facturas.png',
         to: '/projects/facturatelweb',
         link: '/asdasd',
@@ -77,7 +77,7 @@ export const projects: Projects[] = [
     },
     {
         title: 'Sistema de Entradas',
-        subtitle: 'Cobranza de mensualidades',
+        subtitle: 'Control de registro de entradas',
         picture: 'ingres.png',
         to: '/projects/entradas',
         link: 'https://ingress.telweb.app',
