@@ -35,7 +35,6 @@
       </v-list>
     </v-navigation-drawer>
     <v-content>
-      {{menu}}
       <router-view></router-view>
     </v-content>
   </v-app>
