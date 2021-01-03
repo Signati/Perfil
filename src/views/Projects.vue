@@ -32,12 +32,12 @@
             >
               Explore
             </v-btn>
-            <v-btn
-                icon
-                @click="project.open = !project.open"
-            >
-              <v-icon>{{ project.open ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-            </v-btn>
+<!--            <v-btn-->
+<!--                icon-->
+<!--                @click="project.open = !project.open"-->
+<!--            >-->
+<!--              <v-icon>{{ project.open ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>-->
+<!--            </v-btn>-->
           </v-card-actions>
 
           <v-expand-transition>

@@ -17,19 +17,19 @@ const ondinas =  defineComponent({
         const state: Project = {
             title: 'Sistema de Cobranza Escolar',
             business: 'kiinbeh',
-            img: 'kiinbeh/login.png',
+            img: 'ondinas/dash.png',
             about: '\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tortor tellus. Donec maximus curs us pulvinar.\n' +
                 '\t\t\t\t\tProin vehicula eros mauris, sit amet rutrum libero vestibulum ac. Morbi ullamcorper eu lacus vulputate consect.\n' +
                 '\t\t\t\t\tEtur vivamus sagittis accumsan quam eu malesuada. Proin et ante vel libero ultrices cursus. Donec felis leo, cu\n' +
                 '\t\t\t\t\trsus eget hendrerit at, congue nec enim.',
             private: true,
             gallery: [
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/login.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'},
-                {img: 'kiinbeh/conceptos.png'}
+                {img: 'ondinas/dash2.png'},
+                {img: 'ondinas/clientes.png'},
+                {img: 'ondinas/mapa.png'},
+                {img: 'ondinas/tablas.png'},
+                {img: 'ondinas/reporte.png'},
+                {img: 'ondinas/reporte2.png'}
             ],
             description: 'A beautiful blog built using Vue, Vuetify, powered by the Cosmic JS Headless CMS. Read about how it\'s built.',
             features: [
