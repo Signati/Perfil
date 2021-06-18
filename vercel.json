@@ -1,13 +1,8 @@
 {
-  "version": 2,
-  "name": "Perfil",
-  "alias": [
-    "misael.signati.app"
-  ],
   "builds": [
     {
-      "src": "package.json",
-      "use": "@now/static-build"
+      "src": "nuxt.config.ts",
+      "use": "@nuxtjs/vercel-builder"
     }
   ]
 }
