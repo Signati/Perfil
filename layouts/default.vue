@@ -1,39 +1,9 @@
 <template>
   <v-app id="app">
     <tool-app-bar :value="menu" @open="open" />
-<!--    <v-navigation-drawer-->
-<!--      v-model="menu"-->
-<!--      app-->
-<!--    >-->
-<!--      <v-list>-->
-<!--        <v-list-item href="#profile">-->
-<!--          <v-list-item-content>-->
-<!--            <v-list-item-title>Acerca de mi</v-list-item-title>-->
-<!--          </v-list-item-content>-->
-<!--        </v-list-item>-->
-
-<!--        <v-list-item href="#projects">-->
-<!--          <v-list-item-content>-->
-<!--            <v-list-item-title>Proyectos</v-list-item-title>-->
-<!--          </v-list-item-content>-->
-<!--        </v-list-item>-->
-
-<!--        <v-list-item href="#skills">-->
-<!--          <v-list-item-content>-->
-<!--            <v-list-item-title>Habilidades</v-list-item-title>-->
-<!--          </v-list-item-content>-->
-<!--        </v-list-item>-->
-
-<!--        <v-list-item href="#community">-->
-<!--          <v-list-item-content>-->
-<!--            <v-list-item-title>Comunidad</v-list-item-title>-->
-<!--          </v-list-item-content>-->
-<!--        </v-list-item>-->
-<!--      </v-list>-->
-<!--    </v-navigation-drawer>-->
-    <v-main>
-    <nuxt />
-    </v-main>
+      <v-main>
+        <nuxt />
+      </v-main>
   </v-app>
 </template>
 
