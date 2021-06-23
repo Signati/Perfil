@@ -9,7 +9,7 @@
       <v-col cols="12">
         <v-card class="mt-5" style="border-radius: 10px">
           <v-toolbar elevation="0">
-            <v-avatar size="100">
+            <v-avatar size="100" style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)">
               <v-img
                   src="https://avatars3.githubusercontent.com/u/19777772?s=460&u=87fc35b3653f982164b57ec2e5aa97a58a5deef6&v=4"></v-img>
             </v-avatar>

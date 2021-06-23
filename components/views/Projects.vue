@@ -7,7 +7,7 @@
         </div>
       </v-col>
       <v-col v-for="(project,i) of projects" :key="i" cols="12" sm="6" md="4" lg="3" xl="2">
-        <v-card style="border-radius: 10px">
+        <v-card rounded="lg">
           <v-img :src="project.picture" height="200px"></v-img>
           <v-card-title>
             {{ project.title }}

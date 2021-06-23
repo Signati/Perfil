@@ -1,8 +1,9 @@
 <template>
   <v-app-bar
-      elevation="1"
+      elevate-on-scroll
+      :elevation="y > 0 ? 2: 0"
       fixed
-      color="white"
+      :color="y > 0 ? 'white' : 'transparent'"
       app
   >
     <v-btn class="d-none d-sm-flex d-lg-none" @click="open" icon><v-icon>mdi-menu</v-icon></v-btn>
@@ -16,15 +17,16 @@
              class="d-md-none d-sm-none d-lg-flex"
     >
       <v-btn text :href="m.href">
-        <strong>
+        <span class="text-caption" style="font-size: 15px !important;text-transform: none !important;">
           {{ m.text }}
-        </strong>
+        </span>
       </v-btn>
     </v-hover>
   </v-app-bar>
 </template>
 <script lang="ts">
 import { computed, defineComponent, onMounted } from '@nuxtjs/composition-api';
+import { useWindowScroll } from '@vueuse/core'
 
 const ToolAppBar = defineComponent({
   components: {},
@@ -38,6 +40,7 @@ const ToolAppBar = defineComponent({
     const currentRoute = computed(() => {
       return context.root.$route.name
     })
+    const { x, y } = useWindowScroll()
 
     const menu = [
       {
@@ -66,7 +69,8 @@ const ToolAppBar = defineComponent({
     return {
       currentRoute,
       menu,
-      open
+      open,
+      y
     };
   }
 });

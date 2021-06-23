@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <tool-app-bar :value="menu" @open="open" />
-      <v-main>
+      <v-main style="background-color: #F2F5F8;">
         <nuxt />
       </v-main>
   </v-app>
